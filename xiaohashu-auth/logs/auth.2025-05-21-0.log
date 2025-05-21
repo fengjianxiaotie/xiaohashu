@@ -1,0 +1,66 @@
+2025-05-21 20:05:54.124 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Starting DruidTests using Java 17.0.11 with PID 9780 (started by 29567 in D:\xiaohashu-project\xiaohashu\xiaohashu-auth)
+2025-05-21 20:05:54.125 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - The following 1 profile is active: "dev"
+2025-05-21 20:05:55.372 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-21 20:05:55.827 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-21 20:05:56.359 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Started DruidTests in 2.538 seconds (process running for 3.159)
+2025-05-21 20:05:57.075 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - privateKey: MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEAlz9oHlKEe9lft34Zo7NDK5YQo5WhIz25lNCOhDbUmxF0GCljBgvRihqZ/2Vs63p7N1AxJR0ek04EcJagJJkDSQIDAQABAkAOq4IhL8qFGzlJGlBpE/v7xClOvpaDrSrdC+oI2asfM6jhtNpNICptqqrUCKmQNpohO9P1+8yeE+X0womR9/+BAiEAxJeSFqHhxgddePdIzzb+f8W8YrvgCuFu023Rhvg0tYECIQDE8/qJIPcShRiPEw5rwvIZV8YwomKuySyUX3ag2QEByQIhAJ1qdMr0kvFbomgjMkTiV0T+k4tHvu1Xd8OKsvTtOF+BAiEAp5FpFGi+rbwdtAUjnN3E+3jpf5F5Ynp4+lfqZ1mZ+LkCIQCDQBlqXqcCmIlyzUB3cVwh3twmFGAlvwDPI3SLjBmzSg==
+2025-05-21 20:05:57.082 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJc/aB5ShHvZX7d+GaOzQyuWEKOVoSM9uZTQjoQ21JsRdBgpYwYL0Yoamf9lbOt6ezdQMSUdHpNOBHCWoCSZA0kCAwEAAQ==
+2025-05-21 20:05:57.084 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - password: aLBADC5apVfc+tYDoEt0OC/P4JdudPIIZgKLU9eL9RwOpgjnOelaeilM/OjVVLDQvCbPOJBJru0Z8QI29Dj07g==
+2025-05-21 20:05:57.122 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests]: XiaohashuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-21 20:05:57.134 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplication for test class com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests
+2025-05-21 20:05:57.194 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==>  Preparing: delete from t_user where id = ?
+2025-05-21 20:05:57.302 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==> Parameters: 1(Long)
+2025-05-21 20:05:57.305 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - <==    Updates: 0
+2025-05-21 20:05:57.311 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, username, create_time, update_time) values (?, ?, ?, ?)
+2025-05-21 20:05:57.371 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 犬小哈(String), 2025-05-21 20:05:57.311(Timestamp), 2025-05-21 20:05:57.311(Timestamp)
+2025-05-21 20:05:57.392 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-05-21 20:05:57.398 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, username, create_time, update_time from t_user where id = ?
+2025-05-21 20:05:57.405 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 2(Long)
+2025-05-21 20:05:57.419 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 1
+2025-05-21 20:05:57.447 [main] INFO  c.q.xiaohashu.auth.XiaohashuAuthApplicationTests - User: {"id":2,"username":"犬小哈","createTime":1747749515000,"updateTime":1747749515000}
+2025-05-21 20:05:57.458 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-21 20:05:57.463 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-21 20:09:08.188 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Starting DruidTests using Java 17.0.11 with PID 22168 (started by 29567 in D:\xiaohashu-project\xiaohashu\xiaohashu-auth)
+2025-05-21 20:09:08.190 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - The following 1 profile is active: "dev"
+2025-05-21 20:09:09.771 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-21 20:09:10.277 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-21 20:09:10.773 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Started DruidTests in 2.908 seconds (process running for 3.657)
+2025-05-21 20:09:11.488 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - privateKey: MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAk8cHJk1MAz39mMY2rq3ojUAOivudNasx4bcdOb5OdrVjBKhZYNA4ECai1mvqiltopEa0OeoMdy/QO+S0FsNWZQIDAQABAkAJ8B6OTYXJH11zQrvhWhdY4xqXRNM5DWmYsQR+zPTgjWN8YWBqSUL3nrRCsIvn33X22fpNkSkl0c0EiQuvfWkBAiEAnY8gvA9h7r743HvPs/f31uyXaWykRGDySsoNFy0rySECIQDwG17U1AZRoVEFHvfWNCxSCcgV5Ls6CA0bcHu1qg+QxQIgb6qxGJgOYJcY6asWWga0sK6d4SoOgifzkO4CuRpangECIQCUh4nxRDuocY8qCM8tbdbg5PYmPPlo26QoDjwo08uPNQIgOaznnUvEbw4WHOAkhpBwfNdDjinF7IcOFz3O2W9e+pA=
+2025-05-21 20:09:11.493 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJPHByZNTAM9/ZjGNq6t6I1ADor7nTWrMeG3HTm+Tna1YwSoWWDQOBAmotZr6opbaKRGtDnqDHcv0DvktBbDVmUCAwEAAQ==
+2025-05-21 20:09:11.496 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - password: LBCfdiE4ZffGn/k3QkV79PQIBA+nGXEU7hF+V2e9ni8qwrw3g/WvGIQ5FG3G9Yriz86mi8X6Fm3O0Squ3P9L2A==
+2025-05-21 20:09:11.527 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests]: XiaohashuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-21 20:09:11.530 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplication for test class com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests
+2025-05-21 20:09:11.595 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==>  Preparing: delete from t_user where id = ?
+2025-05-21 20:09:11.714 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==> Parameters: 1(Long)
+2025-05-21 20:09:11.720 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - <==    Updates: 0
+2025-05-21 20:09:11.727 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, username, create_time, update_time) values (?, ?, ?, ?)
+2025-05-21 20:09:11.786 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 犬小哈(String), 2025-05-21 20:09:11.727(Timestamp), 2025-05-21 20:09:11.727(Timestamp)
+2025-05-21 20:09:11.795 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-05-21 20:09:11.803 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, username, create_time, update_time from t_user where id = ?
+2025-05-21 20:09:11.807 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 2(Long)
+2025-05-21 20:09:11.821 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 1
+2025-05-21 20:09:11.851 [main] INFO  c.q.xiaohashu.auth.XiaohashuAuthApplicationTests - User: {"id":2,"username":"犬小哈","createTime":1747749515000,"updateTime":1747749515000}
+2025-05-21 20:09:11.871 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-21 20:09:11.879 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-21 20:09:25.651 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Starting DruidTests using Java 17.0.11 with PID 8960 (started by 29567 in D:\xiaohashu-project\xiaohashu\xiaohashu-auth)
+2025-05-21 20:09:25.652 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - The following 1 profile is active: "dev"
+2025-05-21 20:09:27.014 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-21 20:09:27.507 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-21 20:09:27.997 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - Started DruidTests in 2.656 seconds (process running for 3.317)
+2025-05-21 20:09:28.640 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - privateKey: MIIBUwIBADANBgkqhkiG9w0BAQEFAASCAT0wggE5AgEAAkEAp8JgTfKCjaiAmA3kkShlAGU8qIEeSh3BrUUJh56DeGJUUkd0+HoT+hamVClfA733T/Mx88AAUKh/GZUJuuICAwIDAQABAkA9OHmlqH0NTjNTiiph8NBfIxLOWYRgvtg5r8qJBAdtbDjPL2N2RmdwsqHD+B27u+v27Y/yl+AD6+SgQmjTyWItAiEA5fY173mjwNsBUKf3mGDS8zorSIbGOVtDh/TDsDk3WacCIQC6wSHzTLvQbPV207ARtFpglaIpFIU/eH8wgSIcFH1oRQIgVBnXX918petyb6z+QBwpCgscCUpA9HkMGYzKhIhoVcECIEPqIkeRWyezyBxbZUc6+Dbxk5Qu4zouvspL27SseuKlAiBD5LZdI4Ad9zZDxa3zX3Sz7cMSpVkrTvxqzlc8vSXXIQ==
+2025-05-21 20:09:28.647 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKfCYE3ygo2ogJgN5JEoZQBlPKiBHkodwa1FCYeeg3hiVFJHdPh6E/oWplQpXwO990/zMfPAAFCofxmVCbriAgMCAwEAAQ==
+2025-05-21 20:09:28.649 [main] INFO  com.quanxiaoha.xiaohashu.auth.DruidTests - password: EstCRtx16/i2JxprWx3L35LWGuZjGCR9Um/JQpzy3mI9YS02o9EHjYq8nSdEF8nF4HB40/06B64XXYM5xEIH5w==
+2025-05-21 20:09:28.676 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests]: XiaohashuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-21 20:09:28.678 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplication for test class com.quanxiaoha.xiaohashu.auth.XiaohashuAuthApplicationTests
+2025-05-21 20:09:28.745 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==>  Preparing: delete from t_user where id = ?
+2025-05-21 20:09:28.874 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - ==> Parameters: 1(Long)
+2025-05-21 20:09:28.881 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.deleteByPrimaryKey - <==    Updates: 0
+2025-05-21 20:09:28.887 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, username, create_time, update_time) values (?, ?, ?, ?)
+2025-05-21 20:09:28.951 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 犬小哈(String), 2025-05-21 20:09:28.887(Timestamp), 2025-05-21 20:09:28.887(Timestamp)
+2025-05-21 20:09:28.962 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-05-21 20:09:28.968 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, username, create_time, update_time from t_user where id = ?
+2025-05-21 20:09:28.973 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 2(Long)
+2025-05-21 20:09:28.988 [main] DEBUG c.q.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 1
+2025-05-21 20:09:29.027 [main] INFO  c.q.xiaohashu.auth.XiaohashuAuthApplicationTests - User: {"id":2,"username":"犬小哈","createTime":1747749515000,"updateTime":1747749515000}
+2025-05-21 20:09:29.039 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-21 20:09:29.045 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
