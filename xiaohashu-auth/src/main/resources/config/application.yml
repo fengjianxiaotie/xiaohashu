@@ -4,3 +4,7 @@ server:
 spring:
   profiles:
     active: dev # 默认激活 dev 本地开发环境
+
+mybatis:
+  # MyBatis xml 配置文件路径
+  mapper-locations: classpath:/mapper/**/*.xml

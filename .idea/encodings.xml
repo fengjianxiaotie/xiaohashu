@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/xiaoha-framework/xiaoha-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaoha-framework/xiaoha-spring-boot-starter-biz-operationlog/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaoha-framework/xiaoha-spring-boot-starter-biz-operationlog/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoha-framework/xiaoha-spring-boot-starter-jackson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoha-framework/xiaoha-spring-boot-starter-jackson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaohashu-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/xiaohashu-auth/src/main/resources" charset="UTF-8" />
   </component>
