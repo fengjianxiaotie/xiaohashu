@@ -48,6 +48,15 @@
     <druid.version>1.2.21</druid.version>
     <!-- flatten-maven-plugin 版本号 -->
     <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
+    <!--sa-token版本号    -->
+    <sa-token.version>1.38.0</sa-token.version>
+
+    <guava.version>33.0.0-jre</guava.version>
+    <hutool.version>5.8.26</hutool.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+
+    <aliyun.sms.version>2.0.24</aliyun.sms.version>
+    <mybatisplus.version>3.5.12</mybatisplus.version>
   </properties>
 
   <!-- 统一依赖管理 -->
@@ -57,6 +66,21 @@
         <groupId>com.quanxiaoha</groupId>
         <artifactId>xiaoha-common</artifactId>
         <version>${revision}</version>
+      </dependency>
+
+      <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+      <dependency>
+        <groupId>cn.dev33</groupId>
+        <artifactId>sa-token-redis-jackson</artifactId>
+        <version>${sa-token.version}</version>
+      </dependency>
+
+      <!--            阿里云短信客户端，用于发送短信验证码-->
+      <!--            官方文档：https://help.aliyun.com/document_detail/215759.html?spm=a2c4g.215759.0.0.49f32807f4Yc0y-->
+      <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>dysmsapi20170525</artifactId>
+        <version>${aliyun.sms.version}</version>
       </dependency>
 
       <!-- 业务接口日志组件 -->
@@ -80,6 +104,13 @@
         <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <!-- Sa-Token 权限认证 -->
+      <dependency>
+        <groupId>cn.dev33</groupId>
+        <artifactId>sa-token-spring-boot3-starter</artifactId>
+        <version>${sa-token.version}</version>
       </dependency>
 
       <!-- Spring Cloud Alibaba 官方依赖管理 -->
@@ -139,6 +170,25 @@
         <groupId>com.alibaba</groupId>
         <artifactId>druid-spring-boot-3-starter</artifactId>
         <version>${druid.version}</version>
+      </dependency>
+
+      <!-- 相关工具类 -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

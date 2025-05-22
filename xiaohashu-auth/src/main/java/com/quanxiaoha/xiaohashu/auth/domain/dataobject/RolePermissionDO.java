@@ -11,28 +11,12 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserDO {
+public class RolePermissionDO {
     private Long id;
 
-    private String xiaohashuId;
+    private Long roleId;
 
-    private String password;
-
-    private String nickname;
-
-    private String avatar;
-
-    private Date birthday;
-
-    private String backgroundImg;
-
-    private String phone;
-
-    private Byte sex;
-
-    private Byte status;
-
-    private String introduction;
+    private Long permissionId;
 
     private Date createTime;
 
