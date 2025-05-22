@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <context id="mysqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
-
         <!-- 自动检查关键字，为关键字增加反引号，如：`type` -->
         <property name="autoDelimitKeywords" value="true"/>
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
         <!-- 指定生成的 Java 文件编码 -->
         <property name="javaFileEncoding" value="UTF-8"/>
+        <property name="mergeable" value="false"/>
 
         <!-- 对生成的注释进行控制 -->
         <commentGenerator>
@@ -43,7 +43,6 @@
         <!-- Mapper 接口存放路径 -->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.quanxiaoha.xiaohashu.auth.domain.mapper"
                              targetProject="src/main/java"/>
-
         <!-- 需要生成的表-实体类 -->
         <table tableName="t_user" domainObjectName="UserDO"
                enableCountByExample="false"
