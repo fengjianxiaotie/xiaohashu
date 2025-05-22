@@ -56,7 +56,4 @@ logging:
   level:
     com.quanxiaoha.xiaohashu.auth.domain.mapper: debug
 
-#aliyun: # 接入阿里云（发送短信使用）
-#  accessKeyId: LTAI5tBR7JYkQYRFLqcCHy69 # 填写你自己的
-#  accessKeySecret: XlKL1psEc8fl45cRAxKjiWEdQxbikS # 填写你自己的
 
