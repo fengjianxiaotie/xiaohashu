@@ -21,7 +21,11 @@
     from t_role
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <select id="selectEnabledList" resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.RoleDO">
+        select id, role_key, role_name
+        from t_role
+        where status = 0 and is_deleted = 0</select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_role
     where id = #{id,jdbcType=BIGINT}
   </delete>

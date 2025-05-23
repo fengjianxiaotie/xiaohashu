@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -30,14 +31,13 @@ public class UserDO {
 
     private Byte sex;
 
-    private Byte status;
+    private Integer status;
 
     private String introduction;
 
-    private Date createTime;
+    private LocalDateTime createTime;
 
-    private Date updateTime;
+    private LocalDateTime updateTime;
 
     private Boolean isDeleted;
-
 }

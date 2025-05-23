@@ -27,14 +27,19 @@
     from t_user
     where id = #{id,jdbcType=BIGINT}
   </select>
-    <select id="selectByPhone" resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.UserDO">
-      select id, password from t_user where phone = #{phone}
-    </select>
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <select id="selectByPhone" resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.UserDO">
+    select id, password from t_user where phone = #{phone}
+  </select>
+  <select id="selectEnabledList" resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.RoleDO">
+    select id, role_key, role_name
+    from t_role
+    where status = 0 and is_deleted = 0
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.UserDO">
+  <insert id="insert" parameterType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.UserDO" useGeneratedKeys="true" keyProperty="id">
     insert into t_user (id, xiaohashu_id, `password`, 
       nickname, avatar, birthday, 
       background_img, phone, sex, 

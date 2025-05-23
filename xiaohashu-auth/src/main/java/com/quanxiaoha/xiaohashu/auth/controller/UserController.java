@@ -24,7 +24,7 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @PostMapping("/user")
+    @PostMapping("/login")
     @ApiOperationLog(description = "用户登录/注册")
     public Response<?> loginAndRegister(@RequestBody @Validated UserLoginReqVO userLoginReqVO){
         return userService.loginAndRegister(userLoginReqVO);

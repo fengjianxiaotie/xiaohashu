@@ -55,6 +55,9 @@ spring:
 logging:
   level:
     com.quanxiaoha.xiaohashu.auth.domain.mapper: debug
+    
+
+
 
 
 

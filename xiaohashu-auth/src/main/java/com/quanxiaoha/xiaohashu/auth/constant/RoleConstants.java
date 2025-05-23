@@ -1,11 +1,10 @@
 package com.quanxiaoha.xiaohashu.auth.constant;
 
 /**
- * @author: 犬小哈
- * @date: 2024/5/21 15:04
- * @version: v1.0.0
- * @description: 角色全局常量
- **/
+ * @author 周思预
+ * @date 2025/5/22
+ * @Description 角色全局常量
+ */
 public class RoleConstants {
 
 
