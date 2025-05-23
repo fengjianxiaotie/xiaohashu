@@ -25,7 +25,12 @@
     from t_permission
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <select id="selectAppEnabledList"
+            resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.PermissionDO">
+      select id, name, permission_key from t_permission
+      where status = 0 and type = 3 and is_deleted = 0
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_permission
     where id = #{id,jdbcType=BIGINT}
   </delete>

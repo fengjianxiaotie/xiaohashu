@@ -1,0 +1,16 @@
+2025-05-23 10:55:16.107 [main] INFO  com.quanxiaoha.xiaohashu.auth.UserDOTest - Starting UserDOTest using Java 17.0.11 with PID 11740 (started by 29567 in D:\xiaohashu-project\xiaohashu\xiaohashu-auth)
+2025-05-23 10:55:16.109 [main] INFO  com.quanxiaoha.xiaohashu.auth.UserDOTest - The following 1 profile is active: "dev"
+2025-05-23 10:55:16.771 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-23 10:55:16.773 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-23 10:55:16.811 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-05-23 10:55:17.620 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-23 10:55:18.100 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-23 10:55:19.489 [main] INFO  com.quanxiaoha.xiaohashu.auth.UserDOTest - Started UserDOTest in 3.798 seconds (process running for 4.814)
+2025-05-23 10:55:20.378 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaohashu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-23 10:55:20.564 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10004(String), null, 小红薯10004(String), null, null, null, 18684805499(String), null, 0(Integer), null, 2025-05-23T10:55:20.362153300(LocalDateTime), 2025-05-23T10:55:20.362153300(LocalDateTime), false(Boolean)
+2025-05-23 10:55:20.578 [main] DEBUG c.q.x.auth.domain.mapper.UserDOMapper.insert - <==    Updates: 1
+2025-05-23 10:55:20.584 [main] DEBUG c.q.x.auth.domain.mapper.UserRoleDOMapper.insert - ==>  Preparing: insert into t_user_role_rel (id, user_id, role_id, create_time, update_time, is_deleted ) values (?, ?, ?, ?, ?, ? )
+2025-05-23 10:55:20.585 [main] DEBUG c.q.x.auth.domain.mapper.UserRoleDOMapper.insert - ==> Parameters: null, 1(Long), 1(Long), 2025-05-23T10:55:20.584749500(LocalDateTime), 2025-05-23T10:55:20.584749500(LocalDateTime), false(Boolean)
+2025-05-23 10:55:20.590 [main] DEBUG c.q.x.auth.domain.mapper.UserRoleDOMapper.insert - <==    Updates: 1
+2025-05-23 10:55:20.628 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-23 10:55:20.635 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

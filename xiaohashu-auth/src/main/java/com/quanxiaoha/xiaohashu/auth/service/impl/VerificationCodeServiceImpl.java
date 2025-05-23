@@ -22,8 +22,10 @@ import java.util.concurrent.TimeUnit;
 public class VerificationCodeServiceImpl implements VerificationCodeService {
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
+
     @Resource(name = "taskExecutor")
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
     @Resource
     private AliyunSmsHelper aliyunSmsHelper;
 
