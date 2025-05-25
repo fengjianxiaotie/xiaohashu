@@ -45,7 +45,7 @@
     <lombok.version>1.18.30</lombok.version>
     <jackson.version>2.16.1</jackson.version>
     <mysql-connector-java.version>8.0.29</mysql-connector-java.version>
-    <druid.version>1.2.21</druid.version>
+    <druid.version>1.2.23</druid.version>
     <!-- flatten-maven-plugin 版本号 -->
     <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
     <!--sa-token版本号    -->
@@ -56,11 +56,21 @@
     <commons-lang3.version>3.12.0</commons-lang3.version>
 
     <aliyun.sms.version>2.0.24</aliyun.sms.version>
+
+    <nacos-config.version>0.3.0-RC</nacos-config.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+
+<!--      &lt;!&ndash; Nacos 配置中心 &ndash;&gt;-->
+<!--      <dependency>-->
+<!--        <groupId>com.alibaba.boot</groupId>-->
+<!--        <artifactId>nacos-config-spring-boot-starter</artifactId>-->
+<!--        <version>${nacos-config.version}</version>-->
+<!--      </dependency>-->
+
       <dependency>
         <groupId>com.quanxiaoha</groupId>
         <artifactId>xiaoha-common</artifactId>

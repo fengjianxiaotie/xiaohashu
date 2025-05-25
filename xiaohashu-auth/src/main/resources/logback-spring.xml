@@ -29,28 +29,6 @@
         </encoder>
     </appender>
 
-    <!-- 本地 dev 开发环境 -->
-    <springProfile name="dev">
-        <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
-        <root level="INFO">
-            <appender-ref ref="CONSOLE"/> <!-- 输出控制台日志 -->
-            <appender-ref ref="FILE"/> <!-- 打印日志到文件中。PS: 本地环境下，如果不想打印日志到文件，可注释掉此行 -->
-        </root>
-    </springProfile>
-
-    <!-- 其它环境 -->
-    <springProfile name="prod">
-        <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
-        <root level="INFO">
-            <appender-ref ref="FILE"/> <!-- 生产环境下，仅打印日志到文件中 -->
-        </root>
-    </springProfile>
-
-    <!-- 文件输出 -->
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        // 省略...
-    </appender>
-
     <!-- 异步写入日志，提升性能 -->
     <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
         <!-- 是否丢弃日志, 0 表示不丢弃。默认情况下，如果队列满 80%, 会丢弃 TRACE、DEBUG、INFO 级别的日志 -->
@@ -76,4 +54,5 @@
             <appender-ref ref="ASYNC_FILE"/> <!-- 生产环境下，仅打印日志到文件中 -->
         </root>
     </springProfile>
+
 </configuration>
