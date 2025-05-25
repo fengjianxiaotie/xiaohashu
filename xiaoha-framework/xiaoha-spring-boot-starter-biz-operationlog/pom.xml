@@ -21,11 +21,11 @@
             <artifactId>xiaoha-common</artifactId>
         </dependency>
 
-        <!-- AOP 切面 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; AOP 切面 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-aop</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 </project>
 
