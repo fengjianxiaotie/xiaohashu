@@ -16,6 +16,11 @@
     <description>平台通用模块，如一些通用枚举、工具类等等</description>
 
     <dependencies>
+        <!-- hutool工具包        -->
+        <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        </dependency>
         <!-- 避免编写那些冗余的 Java 样板式代码，如 get、set 方法等 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -53,6 +58,11 @@
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
 </project>

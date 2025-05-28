@@ -20,7 +20,6 @@ public class UserLoginReqVO {
     @PhoneNumber
     private String phone;
 
-    @NotNull(message = "验证码不能为空")
     private String code;
 
     private String password;

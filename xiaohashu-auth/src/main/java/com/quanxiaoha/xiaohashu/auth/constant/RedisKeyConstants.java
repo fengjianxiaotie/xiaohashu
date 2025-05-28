@@ -28,11 +28,11 @@ public class RedisKeyConstants {
 
     /**
      * 构建角色对应的权限集合 KEY
-     * @param roleId
+     * @param roleKey
      * @return
      */
-    public static String buildRolePermissionsKey(Long roleId) {
-        return ROLE_PERMISSIONS_KEY_PREFIX + roleId;
+    public static String buildRolePermissionsKey(String roleKey) {
+        return ROLE_PERMISSIONS_KEY_PREFIX + roleKey;
     }
     /**
      * 构建验证码 KEY
@@ -43,7 +43,7 @@ public class RedisKeyConstants {
         return VERIFICATION_CODE_KEY_PREFIX + phone;
     }
 
-    public static String buildUserRoleKey(String phone) {
-        return USER_ROLES_KEY_PREFIX + phone;
+    public static String buildUserRoleKey(Long userId) {
+        return USER_ROLES_KEY_PREFIX + userId;
     }
 }
