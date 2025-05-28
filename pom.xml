@@ -22,6 +22,7 @@
     <module>xiaoha-framework</module>
     <!-- 认证服务 -->
     <module>xiaohashu-auth</module>
+    <module>xiaohashu-gateway</module>
   </modules>
 
   <properties>
@@ -58,18 +59,31 @@
     <aliyun.sms.version>2.0.24</aliyun.sms.version>
 
     <nacos-config.version>0.3.0-RC</nacos-config.version>
+
+    <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+      <!-- 上下文组件 -->
+      <dependency>
+        <groupId>com.quanxiaoha</groupId>
+        <artifactId>xiaoha-spring-boot-starter-biz-context</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>transmittable-thread-local</artifactId>
+        <version>${transmittable-thread-local.version}</version>
+      </dependency>
 
-<!--      &lt;!&ndash; Nacos 配置中心 &ndash;&gt;-->
-<!--      <dependency>-->
-<!--        <groupId>com.alibaba.boot</groupId>-->
-<!--        <artifactId>nacos-config-spring-boot-starter</artifactId>-->
-<!--        <version>${nacos-config.version}</version>-->
-<!--      </dependency>-->
+      <!-- Gateway配置sa-token所需的额外依赖-->
+      <dependency>
+        <groupId>cn.dev33</groupId>
+        <artifactId>sa-token-reactor-spring-boot3-starter</artifactId>
+        <version>${sa-token.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>com.quanxiaoha</groupId>

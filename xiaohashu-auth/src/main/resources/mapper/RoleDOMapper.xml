@@ -21,7 +21,7 @@
     from t_role
     where id = #{id,jdbcType=BIGINT}
   </select>
-    <select id="selectEnabledList" resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.RoleDO">
+    <select id="selectEnabledList" resultMap="BaseResultMap">
         select id, role_key, role_name
         from t_role
         where status = 0 and is_deleted = 0</select>

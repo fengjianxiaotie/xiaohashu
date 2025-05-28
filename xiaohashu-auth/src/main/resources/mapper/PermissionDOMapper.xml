@@ -26,7 +26,7 @@
     where id = #{id,jdbcType=BIGINT}
   </select>
     <select id="selectAppEnabledList"
-            resultType="com.quanxiaoha.xiaohashu.auth.domain.dataobject.PermissionDO">
+            resultMap="BaseResultMap">
       select id, name, permission_key from t_permission
       where status = 0 and type = 3 and is_deleted = 0
     </select>
