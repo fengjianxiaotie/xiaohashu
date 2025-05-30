@@ -22,8 +22,12 @@
     <module>xiaoha-framework</module>
     <!-- 认证服务 -->
     <module>xiaohashu-auth</module>
+    <!-- 网关服务 -->
     <module>xiaohashu-gateway</module>
+    <!-- 存储服务 -->
     <module>xiaohashu-oss</module>
+    <!-- 用户服务 -->
+    <module>xiaohashu-user</module>
   </modules>
 
   <properties>
@@ -64,11 +68,31 @@
     <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
 
     <minio.version>8.2.1</minio.version>
+
+    <feign-form.version>3.8.0</feign-form.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.quanxiaoha</groupId>
+        <artifactId>xiaohashu-user-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
+      <!-- Feign 表单提交 -->
+      <dependency>
+        <groupId>io.github.openfeign.form</groupId>
+        <artifactId>feign-form</artifactId>
+        <version>${feign-form.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.quanxiaoha</groupId>
+        <artifactId>xiaohashu-oss-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
       <!-- 对象存储 Minio -->
       <dependency>
         <groupId>io.minio</groupId>

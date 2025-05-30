@@ -40,7 +40,8 @@ public class GlobalExceptionHandler implements ErrorWebExceptionHandler {
         // 响参
         Response<?> result;
 // 根据捕获的异常类型，设置不同的响应状态码和响应消息
-        if (ex instanceof NotLoginException) { // 未登录异常
+        // 未登录异常
+        if (ex instanceof NotLoginException) {
             // 设置 401 状态码
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             // 构建响应结果
