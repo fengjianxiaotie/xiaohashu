@@ -23,6 +23,7 @@
     <!-- 认证服务 -->
     <module>xiaohashu-auth</module>
     <module>xiaohashu-gateway</module>
+    <module>xiaohashu-oss</module>
   </modules>
 
   <properties>
@@ -61,11 +62,19 @@
     <nacos-config.version>0.3.0-RC</nacos-config.version>
 
     <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
+
+    <minio.version>8.2.1</minio.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+      <!-- 对象存储 Minio -->
+      <dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>${minio.version}</version>
+      </dependency>
       <!-- 上下文组件 -->
       <dependency>
         <groupId>com.quanxiaoha</groupId>
