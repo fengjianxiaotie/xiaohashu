@@ -19,7 +19,9 @@ public enum LoginTypeEnum {
 
     public static LoginTypeEnum valueOf(Integer value){
         for (LoginTypeEnum loginTypeEnum : LoginTypeEnum.values()) {
-            if(loginTypeEnum.value.equals(value)) return loginTypeEnum;
+            if(loginTypeEnum.value.equals(value)) {
+                return loginTypeEnum;
+            }
         }
         return null;
     }
