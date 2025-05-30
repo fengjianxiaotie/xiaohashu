@@ -9,7 +9,6 @@ import com.quanxiaoha.framework.common.exception.BizException;
 import com.quanxiaoha.framework.common.response.Response;
 import com.quanxiaoha.framework.common.util.JsonUtils;
 import com.quanxiaoha.framework.common.util.ParamUtils;
-import com.quanxiaoha.xiaohashu.oss.api.FileFeignApi;
 import com.quanxiaoha.xiaohashu.user.biz.constant.RedisKeyConstants;
 import com.quanxiaoha.xiaohashu.user.biz.constant.RoleConstants;
 import com.quanxiaoha.xiaohashu.user.biz.domain.dataobject.RoleDO;
@@ -25,7 +24,7 @@ import com.quanxiaoha.xiaohashu.user.biz.rpc.OssRpcService;
 import com.quanxiaoha.xiaohashu.user.biz.service.UserService;
 import com.quanxiaoha.xiaohashu.user.dto.req.FindUserByPhoneReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.req.RegisterUserReqDTO;
-import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordDTO;
+import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.resp.FindUserByPhoneRspDTO;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -240,18 +239,18 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * @param updateUserPasswordDTO:
+     * @param updateUserPasswordReqDTO:
       * @return Response<?>
      * @author 29567
      * @description 更新用户密码
      * @date 2025/5/30 14:13
      */
     @Override
-    public Response<?> updateUserPassword(UpdateUserPasswordDTO updateUserPasswordDTO) {
+    public Response<?> updateUserPassword(UpdateUserPasswordReqDTO updateUserPasswordReqDTO) {
         //获取用户Id
         Long userId = LoginUserContextHolder.getUserId();
         //获取新加密后的密码
-        String newPassword = updateUserPasswordDTO.getEncodePassword();
+        String newPassword = updateUserPasswordReqDTO.getEncodePassword();
         //创建新UserDO
         UserDO userDO = UserDO.builder()
                 .id(userId)

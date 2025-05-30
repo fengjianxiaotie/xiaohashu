@@ -6,7 +6,7 @@ import com.quanxiaoha.xiaohashu.user.biz.model.vo.UpdateUserInfoReqVO;
 import com.quanxiaoha.xiaohashu.user.biz.service.UserService;
 import com.quanxiaoha.xiaohashu.user.dto.req.FindUserByPhoneReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.req.RegisterUserReqDTO;
-import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordDTO;
+import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.resp.FindUserByPhoneRspDTO;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -70,7 +70,7 @@ public class UserController {
     }
 
     /**
-     * @param updateUserPasswordDTO:
+     * @param updateUserPasswordReqDTO:
       * @return Response<?>
      * @author 29567
      * @description 更新用户密码
@@ -78,8 +78,8 @@ public class UserController {
      */
     @PostMapping("/password/update")
     @ApiOperationLog(description = "更新用户密码")
-    public Response<?> updateUserPassword(@Validated @RequestBody UpdateUserPasswordDTO updateUserPasswordDTO){
-        return userService.updateUserPassword(updateUserPasswordDTO);
+    public Response<?> updateUserPassword(@Validated @RequestBody UpdateUserPasswordReqDTO updateUserPasswordReqDTO){
+        return userService.updateUserPassword(updateUserPasswordReqDTO);
     }
 
 }
