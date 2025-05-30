@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UpdateUserPasswordDTO {
+public class UpdateUserPasswordReqDTO {
 
     @NotBlank(message = "密码不能为空")
     private String encodePassword;

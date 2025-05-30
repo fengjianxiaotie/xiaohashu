@@ -4,7 +4,7 @@ import com.quanxiaoha.framework.common.response.Response;
 import com.quanxiaoha.xiaohashu.user.api.UserFeignApi;
 import com.quanxiaoha.xiaohashu.user.dto.req.FindUserByPhoneReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.req.RegisterUserReqDTO;
-import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordDTO;
+import com.quanxiaoha.xiaohashu.user.dto.req.UpdateUserPasswordReqDTO;
 import com.quanxiaoha.xiaohashu.user.dto.resp.FindUserByPhoneRspDTO;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
@@ -65,7 +65,7 @@ public class UserRpcService {
      * @param encodePassword
      */
     public void updatePassword(String encodePassword) {
-        UpdateUserPasswordDTO updateUserPasswordReqDTO = new UpdateUserPasswordDTO();
+        UpdateUserPasswordReqDTO updateUserPasswordReqDTO = new UpdateUserPasswordReqDTO();
         updateUserPasswordReqDTO.setEncodePassword(encodePassword);
         userFeignApi.updatePassword(updateUserPasswordReqDTO);
     }
